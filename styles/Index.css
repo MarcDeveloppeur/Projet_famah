@@ -1,0 +1,54 @@
+.Baniere {
+  background-image: url("../public/Images/Antsirabe.jpg");
+  background-repeat: no-repeat;
+  background-size: 99%;
+  width: 97%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 4%;
+  position: relative;
+  z-index: 1;
+}
+.TextContainer {
+  background-color: rgba(150, 150, 150, 0.7);
+  width: 80%;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 0 2px rgb(107, 221, 4);
+  border-bottom: 4px solid rgb(107, 221, 4);
+}
+.title {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  word-spacing: 30px;
+  font-weight: bold;
+}
+.underTitle {
+  color: rgb(6, 34, 164);
+  font-size: 1em;
+  font-style: italic;
+}
+.CardLinkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 30px;
+  border-top: 1px solid blue;
+}
+.pageTitle {
+  width: 50%;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  letter-spacing: 10px;
+  text-align: center;
+  height: 50px;
+  color: rgb(6, 34, 164);
+}
