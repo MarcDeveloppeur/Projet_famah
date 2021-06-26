@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from 'next/link'
 
 export default function NavBarMobile() {
   const [isToggled, setIsToggled] = useState(false);
@@ -14,8 +15,8 @@ export default function NavBarMobile() {
         Menu
       </button>
       <div className="MobileMenuItems">
-        <div className="NavMobileItem">Accueil</div>
-        <div className="NavMobileItem">Nos Colliers</div>
+        <div className="NavMobileItem"><Link href="/">Accueil</Link></div>
+        <div className="NavMobileItem"><Link href="/Colliers">Nos Colliers</Link></div>
         <div className="NavMobileItem">Nos Bagues</div>
         <div className="NavMobileItem">Nos Bracellets</div>
         <div className="NavMobileItem">Nos Boucles d'oreille</div>

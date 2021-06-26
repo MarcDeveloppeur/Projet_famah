@@ -37,3 +37,14 @@
   text-align: center;
   background-color: rgba(150, 150, 150, 0.7);
 }
+
+@media all and (max-width:920px){
+  .CardContainer{
+    width:50%;
+  }
+}
+@media all and (max-width:786px){
+  .CardContainer{
+    width:85%;
+  }
+}

@@ -1,28 +1,20 @@
 import Head from "next/head";
 import Image from "next/image";
+import { Banniere } from "../Components/baniere";
 import Footer from "../Components/Footer";
 import { LinkCard } from "../Components/LinkCard";
 import Navigateur from "../Components/NavBar";
 import ProductCard from "../Components/ProductCard";
 
-export default function Home() {
+export default function Collier() {
   return (
     <>
       <Head>
-        <title>Accueil</title>
+        <title>Nos colliers</title>
       </Head>
       <div className="container">
         <Navigateur />
-        <div className="Baniere">
-          <div className="TextContainer">
-            <h1 className="title">Bijoutier Famah</h1>
-            <h2 className="underTitle">
-              Bijoutier professionnel à Antsirabe, Madagascar. <br />
-              <br />
-              Commande, Creation et transformation en or et argent
-            </h2>
-          </div>
-        </div>
+        <Banniere/>
         <h1 className="pageTitle">Nos Colliers</h1>
         <div className="CardLinkContainer">
           <ProductCard

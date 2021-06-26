@@ -18,3 +18,15 @@
   font-size: 1em;
   color: grey;
 }
+
+@media all and (max-width:920px){
+  .ProductCardContainer{
+    width:50%;
+  }
+}
+
+@media all and (max-width:786px){
+  .ProductCardContainer{
+    width:85%;
+  }
+}
