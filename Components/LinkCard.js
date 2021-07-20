@@ -13,7 +13,7 @@ export function LinkCard(props) {
         )}
         <p className="LinkDescription">{props.description}</p>
         <div className="seeMore">
-          <Link href={props.linkUri}>Voire tous</Link>
+            <Link href={props.linkUri}>Voire tous</Link>
         </div>
       </div>
     </>

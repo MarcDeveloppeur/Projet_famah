@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   width: 80%;
   padding: 30px;
-  border-top: 1px solid blue;
+  border-top: 1px solid rgb(107, 221, 4);
 }
 .pageTitle {
   width: 50%;
@@ -15,5 +15,5 @@
   letter-spacing: 10px;
   text-align: center;
   height: 50px;
-  color: rgb(6, 34, 164);
+  color: rgb(107, 221, 4);
 }

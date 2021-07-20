@@ -22,7 +22,7 @@ export default function NavBar() {
                 <Link href="/Bracellets">Bracellets</Link>
               </div>
               <div className="underItem">
-                <Link href="/BoucleOreille">Boucles d'oreille</Link>
+                <Link href="/Boucles">Boucles d'oreille</Link>
               </div>
             </div>
           </div>

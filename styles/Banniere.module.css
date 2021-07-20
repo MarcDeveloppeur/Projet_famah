@@ -3,13 +3,13 @@
     background-repeat: no-repeat;
     background-size: 99%;
     width: 97%;
-    height: 400px;
+    height: 350px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 5px;
-    margin-left: 4%;
+    margin-left: 1%;
     position: relative;
     z-index: 1;
   }
@@ -27,6 +27,7 @@
     letter-spacing: 15px;
     word-spacing: 30px;
     font-weight: bold;
+    text-shadow: 2px 2px 2px black;
   }
   .underTitle {
     color: rgb(6, 34, 164);
@@ -37,7 +38,7 @@
   @media all and (max-width:920px){
       .Baniere{
           background: transparent;
-          height: 280px;
+          height: 300px;
       }
       .TextContainer{
           margin-top: 0;

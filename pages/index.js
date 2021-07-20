@@ -18,7 +18,7 @@ export default function Home() {
         <div className="CardLinkContainer">
           <LinkCard
             imageLink="/bague.jpg"
-            linkUri="/"
+            linkUri="/Bagues"
             title="Bagues"
             description="Nous créons pour vous vos bague sur commande"
           />
@@ -30,13 +30,13 @@ export default function Home() {
           />
           <LinkCard
             imageLink="/boucle.png"
-            linkUri="/"
+            linkUri="/Boucles"
             longTitle="Boucles d'oreille"
             description="Nous créons pour vous vos bague sur commande"
           />
           <LinkCard
             imageLink="/bracellet.jpg"
-            linkUri="/"
+            linkUri="/Bracellets"
             title="Bracellets"
             description="Nous créons pour vous vos bague sur commande"
           />
