@@ -11,10 +11,6 @@ export default function ProductCard(props) {
           alt="Product Image"
         />
         <h1 className="ProductName">{props.productName}</h1>
-        <h2 className="ProductPrice">
-          <span className="productdesc">Prix: </span>
-          {props.productPrice}
-        </h2>
       </div>
     </>
   );

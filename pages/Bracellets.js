@@ -6,6 +6,25 @@ import { LinkCard } from "../Components/LinkCard";
 import Navigateur from "../Components/NavBar";
 import ProductCard from "../Components/ProductCard";
 
+const bracellets=[
+  {
+    produitName:"Bracellet en argent",
+    imageUrl:"/Images/bracellets/bracellet1.jpg"
+  },
+  {
+    produitName:"Bracellet en argent",
+    imageUrl:"/Images/bracellets/bracellet2.jpg"
+  },
+  {
+    produitName:"Bracellet en argent",
+    imageUrl:"/Images/bracellets/bracellet3.jpg"
+  },
+  {
+    produitName:"Bracellet en argent",
+    imageUrl:"/Images/bracellets/bracellet4.jpg"
+  }
+]
+
 export default function Bracellets() {
   return (
     <>
@@ -17,61 +36,7 @@ export default function Bracellets() {
         <Banniere/>
         <h1 className="pageTitle">Nos Bracellets</h1>
         <div className="CardLinkContainer">
-          <ProductCard
-            productName="Collier 1"
-            productPrice="300"
-            imageUrl="/Images/bague1.jpg"
-          />
-          <ProductCard
-            productName="Collier 2"
-            productPrice="300"
-            imageUrl="/Images/bague2.jpg"
-          />
-          <ProductCard
-            productName="Collier 3"
-            productPrice="300"
-            imageUrl="/Images/bague3.jpg"
-          />
-          <ProductCard
-            productName="Collier 4"
-            productPrice="300"
-            imageUrl="/Images/bague4.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague5.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague6.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague7.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague8.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague9.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague10.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague11.jpg"
-          />
+        {bracellets.map((collier,key)=><ProductCard key={key} productName={collier.produitName} imageUrl={collier.imageUrl}/>)}
         </div>
         <Footer />
       </div>

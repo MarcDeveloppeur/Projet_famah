@@ -6,6 +6,29 @@ import { LinkCard } from "../Components/LinkCard";
 import Navigateur from "../Components/NavBar";
 import ProductCard from "../Components/ProductCard";
 
+const boucles=[
+  {
+    produitName:"Boucles d'oreille en argent",
+    imageUrl:"/Images/boucles/boucle1.jpg"
+  },
+  {
+    produitName:"Boucles d'oreille en argent",
+    imageUrl:"/Images/boucles/boucle2.jpg"
+  },
+  {
+    produitName:"Boucles d'oreille en argent",
+    imageUrl:"/Images/boucles/boucle3.jpg"
+  },
+  {
+    produitName:"Boucles d'oreille en argent",
+    imageUrl:"/Images/boucles/boucle4.jpg"
+  },
+  {
+    produitName:"Boucles d'oreille en argent",
+    imageUrl:"/Images/boucles/boucle5.jpg"
+  },
+]
+
 export default function Boucles() {
   return (
     <>
@@ -17,61 +40,7 @@ export default function Boucles() {
         <Banniere/>
         <h1 className="pageTitle">Nos Boucles d'oreille</h1>
         <div className="CardLinkContainer">
-          <ProductCard
-            productName="Collier 1"
-            productPrice="300"
-            imageUrl="/Images/bague1.jpg"
-          />
-          <ProductCard
-            productName="Collier 2"
-            productPrice="300"
-            imageUrl="/Images/bague2.jpg"
-          />
-          <ProductCard
-            productName="Collier 3"
-            productPrice="300"
-            imageUrl="/Images/bague3.jpg"
-          />
-          <ProductCard
-            productName="Collier 4"
-            productPrice="300"
-            imageUrl="/Images/bague4.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague5.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague6.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague7.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague8.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague9.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague10.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague11.jpg"
-          />
+        {boucles.map((collier,key)=><ProductCard key={key} productName={collier.produitName} imageUrl={collier.imageUrl}/>)}
         </div>
         <Footer />
       </div>

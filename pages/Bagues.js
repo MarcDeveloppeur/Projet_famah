@@ -6,6 +6,55 @@ import { LinkCard } from "../Components/LinkCard";
 import Navigateur from "../Components/NavBar";
 import ProductCard from "../Components/ProductCard";
 
+const colliers=[
+  {
+    produitName:"Bague en argent",
+    imageUrl:"/Images/bagues/bague1.jpg"
+  },
+  {
+    produitName:"Bague en argent",
+    imageUrl:"/Images/bagues/bague2.jpg"
+  },  {
+    produitName:"Bague en argent",
+    imageUrl:"/Images/bagues/bague3.jpg"
+  },  {
+    produitName:"Bague en argent",
+    imageUrl:"/Images/bagues/bague4.jpg"
+  },  {
+    produitName:"Bague en argent",
+    imageUrl:"/Images/bagues/bague5.jpg"
+  },
+  {
+    produitName:"Bague en argent",
+    imageUrl:"/Images/bagues/bague6.jpg"
+  },
+  {
+    produitName:"Bague en argent",
+    imageUrl:"/Images/bagues/bague7.jpg"
+  },
+  {
+    produitName:"Bague en argent",
+    imageUrl:"/Images/bagues/bague9.jpg"
+  },
+  {
+    produitName:"Bague en argent",
+    imageUrl:"/Images/bagues/bague10.jpg"
+  },
+  {
+    produitName:"Bague en argent",
+    imageUrl:"/Images/bagues/bague11.jpg"
+  },
+  {
+    produitName:"Bague en argent",
+    imageUrl:"/Images/bagues/bague12.jpg"
+  },
+  {
+    produitName:"Bague en argent",
+    imageUrl:"/Images/bagues/bague13.jpg"
+  }
+
+]
+
 export default function Bagues() {
   return (
     <>
@@ -17,61 +66,7 @@ export default function Bagues() {
         <Banniere/>
         <h1 className="pageTitle">Nos Bagues</h1>
         <div className="CardLinkContainer">
-          <ProductCard
-            productName="Collier 1"
-            productPrice="300"
-            imageUrl="/Images/bague1.jpg"
-          />
-          <ProductCard
-            productName="Collier 2"
-            productPrice="300"
-            imageUrl="/Images/bague2.jpg"
-          />
-          <ProductCard
-            productName="Collier 3"
-            productPrice="300"
-            imageUrl="/Images/bague3.jpg"
-          />
-          <ProductCard
-            productName="Collier 4"
-            productPrice="300"
-            imageUrl="/Images/bague4.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague5.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague6.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague7.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague8.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague9.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague10.jpg"
-          />
-          <ProductCard
-            productName="Collier 5"
-            productPrice="300"
-            imageUrl="/Images/bague11.jpg"
-          />
+           {colliers.map((collier,key)=><ProductCard key={key} productName={collier.produitName} imageUrl={collier.imageUrl}/>)}
         </div>
         <Footer />
       </div>

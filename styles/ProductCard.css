@@ -10,9 +10,11 @@
   padding: 10px;
 }
 .ProductName {
-  font-size: 2em;
+  text-align: center;
+  font-size: 1.2em;
   color: rgb(107, 221, 4);
   border-top: black 1px solid;
+  padding-top: 10px;
 }
 .ProductPrice {
   font-size: 1em;
