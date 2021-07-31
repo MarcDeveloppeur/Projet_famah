@@ -1,7 +1,7 @@
 {
   "name": "projet_famah",
   "version": "0.1.0",
-  "engines" : { "node" : ">=14.16.1" },
+  "engines" : { "node" : "14.16.1" },
   "engineStrict" : true,
   "private": true,
   "scripts": {
